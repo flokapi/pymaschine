@@ -1,0 +1,30 @@
+{
+    "pads": {
+        "0": "01.wav",
+        "1": "02.wav",
+        "10": "06-dumpster-4bts-timp.wav",
+        "11": "impact-6291.mp3",
+        "12": "03-dumpster-oneStrikeLow.wav",
+        "13": "02-dumpster-oneStrikeTimp.wav",
+        "14": "00-dumpster-oneStrikeMetal.wav",
+        "15": "02-dumpster-oneStrikeTimp.wav",
+        "2": "bustafunk1.wav",
+        "3": "bustafunk2.wav",
+        "4": "bustafunk3.wav",
+        "5": "ping.wav",
+        "6": "vignesh.wav",
+        "7": "03-dumpster-oneStrikeLow.wav",
+        "8": "04-dumpster-oneStrikeBell.wav",
+        "9": "00-dumpster-oneStrikeMetal.wav"
+    },
+    "pattern": {
+        "208261": 2,
+        "984150": 7,
+        "1152569": 7,
+        "1504251": 7,
+        "1835361": 7,
+        "2007285": 7,
+        "2280568": 7
+    },
+    "sound_path": "../sounds/"
+}

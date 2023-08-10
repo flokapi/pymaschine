@@ -1,0 +1,70 @@
+[build-system]
+requires = ["setuptools>=67.6.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pymaschine"
+version = "0.0.3"
+description = "Play or compose music using Maschine Mikro MK3"
+authors = [
+    { name = "flokapi" },
+    { email = "flokapi@pm.me" },
+]
+license = { text = "GPL-3.0-only" }
+readme = "README.md"
+requires-python = ">=3.9"
+
+keywords = ["maschine", "pads", "music", "patterns"]
+
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: End Users/Desktop",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Artistic Software",
+    "Topic :: Multimedia",
+    "Topic :: Multimedia :: Sound/Audio",
+]
+
+dependencies = [
+    "pyqt5",
+    "pymikro",
+    "easymix",
+]
+
+[tool.setuptools]
+include-package-data = false
+
+[tool.setuptools.packages.find]
+include = ["pymaschine**"]
+namespaces = false
+
+[tool.setuptools.package-data]
+"pymaschine.modules" = ["*.json"]
+
+[tool.isort]
+profile = "black"
+skip_gitignore = true
+
+[project.optional-dependencies]
+dev = [
+]
+profile = [
+]
+
+[project.urls]
+Homepage = "https://github.com/flokapi/pymaschine"
+Documentation = "https://github.com/flokapi/pymaschine"
+"Source Code" = "https://github.com/flokapi/pymaschine"
+"Bug Tracker" = "https://github.com/flokapi/pymaschine/issues"
+
+[project.scripts]
+sardine = 'pymaschine.__main__:launch'
+
+[tool.pytest.ini_options]
+addopts = "--import-mode=importlib"
